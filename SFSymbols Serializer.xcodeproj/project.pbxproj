@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1205C76E28607DE100A2DAC1 /* SFSymbols_SerializerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C76D28607DE100A2DAC1 /* SFSymbols_SerializerApp.swift */; };
+		1205C77028607DE100A2DAC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C76F28607DE100A2DAC1 /* ContentView.swift */; };
+		1205C77228607DE300A2DAC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1205C77128607DE300A2DAC1 /* Assets.xcassets */; };
+		1205C77628607DE300A2DAC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1205C77528607DE300A2DAC1 /* Preview Assets.xcassets */; };
+		1205C78028607DE300A2DAC1 /* SFSymbols_SerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C77F28607DE300A2DAC1 /* SFSymbols_SerializerTests.swift */; };
+		1205C78A28607DE300A2DAC1 /* SFSymbols_SerializerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C78928607DE300A2DAC1 /* SFSymbols_SerializerUITests.swift */; };
+		1205C78C28607DE300A2DAC1 /* SFSymbols_SerializerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C78B28607DE300A2DAC1 /* SFSymbols_SerializerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1205C77C28607DE300A2DAC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1205C76228607DE100A2DAC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1205C76928607DE100A2DAC1;
+			remoteInfo = "SFSymbols Serializer";
+		};
+		1205C78628607DE300A2DAC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1205C76228607DE100A2DAC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1205C76928607DE100A2DAC1;
+			remoteInfo = "SFSymbols Serializer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1205C76A28607DE100A2DAC1 /* SFSymbols Serializer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFSymbols Serializer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1205C76D28607DE100A2DAC1 /* SFSymbols_SerializerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols_SerializerApp.swift; sourceTree = "<group>"; };
+		1205C76F28607DE100A2DAC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1205C77128607DE300A2DAC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1205C77328607DE300A2DAC1 /* SFSymbols_Serializer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SFSymbols_Serializer.entitlements; sourceTree = "<group>"; };
+		1205C77528607DE300A2DAC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1205C77B28607DE300A2DAC1 /* SFSymbols SerializerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SFSymbols SerializerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1205C77F28607DE300A2DAC1 /* SFSymbols_SerializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols_SerializerTests.swift; sourceTree = "<group>"; };
+		1205C78528607DE300A2DAC1 /* SFSymbols SerializerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SFSymbols SerializerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1205C78928607DE300A2DAC1 /* SFSymbols_SerializerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols_SerializerUITests.swift; sourceTree = "<group>"; };
+		1205C78B28607DE300A2DAC1 /* SFSymbols_SerializerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols_SerializerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1205C76728607DE100A2DAC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1205C77828607DE300A2DAC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1205C78228607DE300A2DAC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1205C76128607DE100A2DAC1 = {
+			isa = PBXGroup;
+			children = (
+				1205C76C28607DE100A2DAC1 /* SFSymbols Serializer */,
+				1205C77E28607DE300A2DAC1 /* SFSymbols SerializerTests */,
+				1205C78828607DE300A2DAC1 /* SFSymbols SerializerUITests */,
+				1205C76B28607DE100A2DAC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1205C76B28607DE100A2DAC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1205C76A28607DE100A2DAC1 /* SFSymbols Serializer.app */,
+				1205C77B28607DE300A2DAC1 /* SFSymbols SerializerTests.xctest */,
+				1205C78528607DE300A2DAC1 /* SFSymbols SerializerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1205C76C28607DE100A2DAC1 /* SFSymbols Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				1205C76D28607DE100A2DAC1 /* SFSymbols_SerializerApp.swift */,
+				1205C76F28607DE100A2DAC1 /* ContentView.swift */,
+				1205C77128607DE300A2DAC1 /* Assets.xcassets */,
+				1205C77328607DE300A2DAC1 /* SFSymbols_Serializer.entitlements */,
+				1205C77428607DE300A2DAC1 /* Preview Content */,
+			);
+			path = "SFSymbols Serializer";
+			sourceTree = "<group>";
+		};
+		1205C77428607DE300A2DAC1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1205C77528607DE300A2DAC1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1205C77E28607DE300A2DAC1 /* SFSymbols SerializerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1205C77F28607DE300A2DAC1 /* SFSymbols_SerializerTests.swift */,
+			);
+			path = "SFSymbols SerializerTests";
+			sourceTree = "<group>";
+		};
+		1205C78828607DE300A2DAC1 /* SFSymbols SerializerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1205C78928607DE300A2DAC1 /* SFSymbols_SerializerUITests.swift */,
+				1205C78B28607DE300A2DAC1 /* SFSymbols_SerializerUITestsLaunchTests.swift */,
+			);
+			path = "SFSymbols SerializerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1205C76928607DE100A2DAC1 /* SFSymbols Serializer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1205C78F28607DE300A2DAC1 /* Build configuration list for PBXNativeTarget "SFSymbols Serializer" */;
+			buildPhases = (
+				1205C76628607DE100A2DAC1 /* Sources */,
+				1205C76728607DE100A2DAC1 /* Frameworks */,
+				1205C76828607DE100A2DAC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SFSymbols Serializer";
+			productName = "SFSymbols Serializer";
+			productReference = 1205C76A28607DE100A2DAC1 /* SFSymbols Serializer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1205C77A28607DE300A2DAC1 /* SFSymbols SerializerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1205C79228607DE300A2DAC1 /* Build configuration list for PBXNativeTarget "SFSymbols SerializerTests" */;
+			buildPhases = (
+				1205C77728607DE300A2DAC1 /* Sources */,
+				1205C77828607DE300A2DAC1 /* Frameworks */,
+				1205C77928607DE300A2DAC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1205C77D28607DE300A2DAC1 /* PBXTargetDependency */,
+			);
+			name = "SFSymbols SerializerTests";
+			productName = "SFSymbols SerializerTests";
+			productReference = 1205C77B28607DE300A2DAC1 /* SFSymbols SerializerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1205C78428607DE300A2DAC1 /* SFSymbols SerializerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1205C79528607DE300A2DAC1 /* Build configuration list for PBXNativeTarget "SFSymbols SerializerUITests" */;
+			buildPhases = (
+				1205C78128607DE300A2DAC1 /* Sources */,
+				1205C78228607DE300A2DAC1 /* Frameworks */,
+				1205C78328607DE300A2DAC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1205C78728607DE300A2DAC1 /* PBXTargetDependency */,
+			);
+			name = "SFSymbols SerializerUITests";
+			productName = "SFSymbols SerializerUITests";
+			productReference = 1205C78528607DE300A2DAC1 /* SFSymbols SerializerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1205C76228607DE100A2DAC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					1205C76928607DE100A2DAC1 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					1205C77A28607DE300A2DAC1 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 1205C76928607DE100A2DAC1;
+					};
+					1205C78428607DE300A2DAC1 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 1205C76928607DE100A2DAC1;
+					};
+				};
+			};
+			buildConfigurationList = 1205C76528607DE100A2DAC1 /* Build configuration list for PBXProject "SFSymbols Serializer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1205C76128607DE100A2DAC1;
+			productRefGroup = 1205C76B28607DE100A2DAC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1205C76928607DE100A2DAC1 /* SFSymbols Serializer */,
+				1205C77A28607DE300A2DAC1 /* SFSymbols SerializerTests */,
+				1205C78428607DE300A2DAC1 /* SFSymbols SerializerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1205C76828607DE100A2DAC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1205C77628607DE300A2DAC1 /* Preview Assets.xcassets in Resources */,
+				1205C77228607DE300A2DAC1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1205C77928607DE300A2DAC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1205C78328607DE300A2DAC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1205C76628607DE100A2DAC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1205C77028607DE100A2DAC1 /* ContentView.swift in Sources */,
+				1205C76E28607DE100A2DAC1 /* SFSymbols_SerializerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1205C77728607DE300A2DAC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1205C78028607DE300A2DAC1 /* SFSymbols_SerializerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1205C78128607DE300A2DAC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1205C78A28607DE300A2DAC1 /* SFSymbols_SerializerUITests.swift in Sources */,
+				1205C78C28607DE300A2DAC1 /* SFSymbols_SerializerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1205C77D28607DE300A2DAC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1205C76928607DE100A2DAC1 /* SFSymbols Serializer */;
+			targetProxy = 1205C77C28607DE300A2DAC1 /* PBXContainerItemProxy */;
+		};
+		1205C78728607DE300A2DAC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1205C76928607DE100A2DAC1 /* SFSymbols Serializer */;
+			targetProxy = 1205C78628607DE300A2DAC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1205C78D28607DE300A2DAC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1205C78E28607DE300A2DAC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1205C79028607DE300A2DAC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SFSymbols Serializer/SFSymbols_Serializer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SFSymbols Serializer/Preview Content\"";
+				DEVELOPMENT_TEAM = 67Z7S2893K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashleychapman.SFSymbols-Serializer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1205C79128607DE300A2DAC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SFSymbols Serializer/SFSymbols_Serializer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SFSymbols Serializer/Preview Content\"";
+				DEVELOPMENT_TEAM = 67Z7S2893K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashleychapman.SFSymbols-Serializer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1205C79328607DE300A2DAC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67Z7S2893K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashleychapman.SFSymbols-SerializerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFSymbols Serializer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SFSymbols Serializer";
+			};
+			name = Debug;
+		};
+		1205C79428607DE300A2DAC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67Z7S2893K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashleychapman.SFSymbols-SerializerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFSymbols Serializer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SFSymbols Serializer";
+			};
+			name = Release;
+		};
+		1205C79628607DE300A2DAC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67Z7S2893K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashleychapman.SFSymbols-SerializerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SFSymbols Serializer";
+			};
+			name = Debug;
+		};
+		1205C79728607DE300A2DAC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67Z7S2893K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashleychapman.SFSymbols-SerializerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SFSymbols Serializer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1205C76528607DE100A2DAC1 /* Build configuration list for PBXProject "SFSymbols Serializer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1205C78D28607DE300A2DAC1 /* Debug */,
+				1205C78E28607DE300A2DAC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1205C78F28607DE300A2DAC1 /* Build configuration list for PBXNativeTarget "SFSymbols Serializer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1205C79028607DE300A2DAC1 /* Debug */,
+				1205C79128607DE300A2DAC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1205C79228607DE300A2DAC1 /* Build configuration list for PBXNativeTarget "SFSymbols SerializerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1205C79328607DE300A2DAC1 /* Debug */,
+				1205C79428607DE300A2DAC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1205C79528607DE300A2DAC1 /* Build configuration list for PBXNativeTarget "SFSymbols SerializerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1205C79628607DE300A2DAC1 /* Debug */,
+				1205C79728607DE300A2DAC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1205C76228607DE100A2DAC1 /* Project object */;
+}
