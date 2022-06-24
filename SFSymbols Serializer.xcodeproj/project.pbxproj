@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1205C76E28607DE100A2DAC1 /* SFSymbols_SerializerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C76D28607DE100A2DAC1 /* SFSymbols_SerializerApp.swift */; };
+		1205C76E28607DE100A2DAC1 /* SFSymbolsSerializerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C76D28607DE100A2DAC1 /* SFSymbolsSerializerApp.swift */; };
 		1205C77028607DE100A2DAC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C76F28607DE100A2DAC1 /* ContentView.swift */; };
 		1205C77228607DE300A2DAC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1205C77128607DE300A2DAC1 /* Assets.xcassets */; };
 		1205C77628607DE300A2DAC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1205C77528607DE300A2DAC1 /* Preview Assets.xcassets */; };
 		1205C78028607DE300A2DAC1 /* SFSymbols_SerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C77F28607DE300A2DAC1 /* SFSymbols_SerializerTests.swift */; };
 		1205C78A28607DE300A2DAC1 /* SFSymbols_SerializerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C78928607DE300A2DAC1 /* SFSymbols_SerializerUITests.swift */; };
 		1205C78C28607DE300A2DAC1 /* SFSymbols_SerializerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C78B28607DE300A2DAC1 /* SFSymbols_SerializerUITestsLaunchTests.swift */; };
+		1205C79C28607F1A00A2DAC1 /* EditorTabletSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C79B28607F1A00A2DAC1 /* EditorTabletSplitView.swift */; };
+		1205C7A228607F5800A2DAC1 /* SFSymbolsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C79F28607F5800A2DAC1 /* SFSymbolsObject.swift */; };
+		1205C7A328607F5800A2DAC1 /* SFSymbolItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C7A028607F5800A2DAC1 /* SFSymbolItem.swift */; };
+		1205C7A428607F5800A2DAC1 /* SFSymbolsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C7A128607F5800A2DAC1 /* SFSymbolsCategory.swift */; };
+		1205C7A62860849700A2DAC1 /* AddSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C7A52860849700A2DAC1 /* AddSymbolsView.swift */; };
+		1205C7AA2860912B00A2DAC1 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C7A82860912B00A2DAC1 /* ObservableObject.swift */; };
+		1205C7AB2860912B00A2DAC1 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C7A92860912B00A2DAC1 /* Binding.swift */; };
+		1205C7AD28609ADA00A2DAC1 /* InspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1205C7AC28609ADA00A2DAC1 /* InspectorView.swift */; };
+		129D1FE72861451800DD26A0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129D1FE62861451800DD26A0 /* Persistence.swift */; };
+		129D1FEA2861454B00DD26A0 /* SFSymbolSerializerModal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 129D1FE82861454B00DD26A0 /* SFSymbolSerializerModal.xcdatamodeld */; };
+		129D1FEC286148A200DD26A0 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129D1FEB286148A200DD26A0 /* EditorView.swift */; };
+		12D145DA2860B40D00B712B1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D145D92860B40D00B712B1 /* BaseViewModel.swift */; };
+		12DCE4A3286293D600313141 /* SFSymbolSerializerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCE4A2286293D600313141 /* SFSymbolSerializerDocument.swift */; };
+		12DCE4A52862952900313141 /* FocusValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCE4A42862952900313141 /* FocusValues.swift */; };
+		12DCE4A72862955200313141 /* FocusedFileExporterBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCE4A62862955200313141 /* FocusedFileExporterBinding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +50,7 @@
 
 /* Begin PBXFileReference section */
 		1205C76A28607DE100A2DAC1 /* SFSymbols Serializer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFSymbols Serializer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1205C76D28607DE100A2DAC1 /* SFSymbols_SerializerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols_SerializerApp.swift; sourceTree = "<group>"; };
+		1205C76D28607DE100A2DAC1 /* SFSymbolsSerializerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsSerializerApp.swift; sourceTree = "<group>"; };
 		1205C76F28607DE100A2DAC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1205C77128607DE300A2DAC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1205C77328607DE300A2DAC1 /* SFSymbols_Serializer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SFSymbols_Serializer.entitlements; sourceTree = "<group>"; };
@@ -45,6 +60,21 @@
 		1205C78528607DE300A2DAC1 /* SFSymbols SerializerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SFSymbols SerializerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1205C78928607DE300A2DAC1 /* SFSymbols_SerializerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols_SerializerUITests.swift; sourceTree = "<group>"; };
 		1205C78B28607DE300A2DAC1 /* SFSymbols_SerializerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols_SerializerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1205C79B28607F1A00A2DAC1 /* EditorTabletSplitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorTabletSplitView.swift; sourceTree = "<group>"; };
+		1205C79F28607F5800A2DAC1 /* SFSymbolsObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSymbolsObject.swift; sourceTree = "<group>"; };
+		1205C7A028607F5800A2DAC1 /* SFSymbolItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSymbolItem.swift; sourceTree = "<group>"; };
+		1205C7A128607F5800A2DAC1 /* SFSymbolsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSymbolsCategory.swift; sourceTree = "<group>"; };
+		1205C7A52860849700A2DAC1 /* AddSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSymbolsView.swift; sourceTree = "<group>"; };
+		1205C7A82860912B00A2DAC1 /* ObservableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
+		1205C7A92860912B00A2DAC1 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		1205C7AC28609ADA00A2DAC1 /* InspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorView.swift; sourceTree = "<group>"; };
+		129D1FE62861451800DD26A0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		129D1FE92861454B00DD26A0 /* SFSymbolSerializerModal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SFSymbolSerializerModal.xcdatamodel; sourceTree = "<group>"; };
+		129D1FEB286148A200DD26A0 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		12D145D92860B40D00B712B1 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		12DCE4A2286293D600313141 /* SFSymbolSerializerDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolSerializerDocument.swift; sourceTree = "<group>"; };
+		12DCE4A42862952900313141 /* FocusValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusValues.swift; sourceTree = "<group>"; };
+		12DCE4A62862955200313141 /* FocusedFileExporterBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedFileExporterBinding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +125,13 @@
 		1205C76C28607DE100A2DAC1 /* SFSymbols Serializer */ = {
 			isa = PBXGroup;
 			children = (
-				1205C76D28607DE100A2DAC1 /* SFSymbols_SerializerApp.swift */,
+				1205C79D28607F3E00A2DAC1 /* Common */,
+				1205C79828607EEF00A2DAC1 /* Components */,
+				1205C76D28607DE100A2DAC1 /* SFSymbolsSerializerApp.swift */,
 				1205C76F28607DE100A2DAC1 /* ContentView.swift */,
 				1205C77128607DE300A2DAC1 /* Assets.xcassets */,
 				1205C77328607DE300A2DAC1 /* SFSymbols_Serializer.entitlements */,
+				129D1FE82861454B00DD26A0 /* SFSymbolSerializerModal.xcdatamodeld */,
 				1205C77428607DE300A2DAC1 /* Preview Content */,
 			);
 			path = "SFSymbols Serializer";
@@ -127,6 +160,66 @@
 				1205C78B28607DE300A2DAC1 /* SFSymbols_SerializerUITestsLaunchTests.swift */,
 			);
 			path = "SFSymbols SerializerUITests";
+			sourceTree = "<group>";
+		};
+		1205C79828607EEF00A2DAC1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1205C79A28607EFB00A2DAC1 /* Views */,
+				1205C79928607EF600A2DAC1 /* Pages */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1205C79928607EF600A2DAC1 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				1205C7A52860849700A2DAC1 /* AddSymbolsView.swift */,
+				1205C7AC28609ADA00A2DAC1 /* InspectorView.swift */,
+				129D1FEB286148A200DD26A0 /* EditorView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		1205C79A28607EFB00A2DAC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1205C79B28607F1A00A2DAC1 /* EditorTabletSplitView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1205C79D28607F3E00A2DAC1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				12D145D92860B40D00B712B1 /* BaseViewModel.swift */,
+				12DCE4A62862955200313141 /* FocusedFileExporterBinding.swift */,
+				1205C7A7286090D900A2DAC1 /* Extensions */,
+				1205C79E28607F4500A2DAC1 /* JSON */,
+				129D1FE62861451800DD26A0 /* Persistence.swift */,
+				12DCE4A2286293D600313141 /* SFSymbolSerializerDocument.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1205C79E28607F4500A2DAC1 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1205C7A028607F5800A2DAC1 /* SFSymbolItem.swift */,
+				1205C7A128607F5800A2DAC1 /* SFSymbolsCategory.swift */,
+				1205C79F28607F5800A2DAC1 /* SFSymbolsObject.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		1205C7A7286090D900A2DAC1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1205C7A92860912B00A2DAC1 /* Binding.swift */,
+				1205C7A82860912B00A2DAC1 /* ObservableObject.swift */,
+				12DCE4A42862952900313141 /* FocusValues.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +352,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1205C7A428607F5800A2DAC1 /* SFSymbolsCategory.swift in Sources */,
+				12D145DA2860B40D00B712B1 /* BaseViewModel.swift in Sources */,
+				12DCE4A72862955200313141 /* FocusedFileExporterBinding.swift in Sources */,
 				1205C77028607DE100A2DAC1 /* ContentView.swift in Sources */,
-				1205C76E28607DE100A2DAC1 /* SFSymbols_SerializerApp.swift in Sources */,
+				129D1FEC286148A200DD26A0 /* EditorView.swift in Sources */,
+				129D1FEA2861454B00DD26A0 /* SFSymbolSerializerModal.xcdatamodeld in Sources */,
+				1205C7A62860849700A2DAC1 /* AddSymbolsView.swift in Sources */,
+				1205C7A228607F5800A2DAC1 /* SFSymbolsObject.swift in Sources */,
+				1205C7AB2860912B00A2DAC1 /* Binding.swift in Sources */,
+				1205C7A328607F5800A2DAC1 /* SFSymbolItem.swift in Sources */,
+				12DCE4A3286293D600313141 /* SFSymbolSerializerDocument.swift in Sources */,
+				1205C7AA2860912B00A2DAC1 /* ObservableObject.swift in Sources */,
+				1205C79C28607F1A00A2DAC1 /* EditorTabletSplitView.swift in Sources */,
+				12DCE4A52862952900313141 /* FocusValues.swift in Sources */,
+				129D1FE72861451800DD26A0 /* Persistence.swift in Sources */,
+				1205C7AD28609ADA00A2DAC1 /* InspectorView.swift in Sources */,
+				1205C76E28607DE100A2DAC1 /* SFSymbolsSerializerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,14 +519,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "SFSymbols Serializer/SFSymbols_Serializer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_ASSET_PATHS = "\"SFSymbols Serializer/Preview Content\"";
 				DEVELOPMENT_TEAM = 67Z7S2893K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -432,9 +542,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -443,14 +555,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "SFSymbols Serializer/SFSymbols_Serializer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_ASSET_PATHS = "\"SFSymbols Serializer/Preview Content\"";
 				DEVELOPMENT_TEAM = 67Z7S2893K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -464,9 +578,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -600,6 +716,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		129D1FE82861454B00DD26A0 /* SFSymbolSerializerModal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				129D1FE92861454B00DD26A0 /* SFSymbolSerializerModal.xcdatamodel */,
+			);
+			currentVersion = 129D1FE92861454B00DD26A0 /* SFSymbolSerializerModal.xcdatamodel */;
+			path = SFSymbolSerializerModal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1205C76228607DE100A2DAC1 /* Project object */;
 }

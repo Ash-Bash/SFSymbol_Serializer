@@ -8,10 +8,15 @@
 import SwiftUI
 
 @main
-struct SFSymbols_SerializerApp: App {
+struct SFSymbolsSerializerApp: App {
+    
+    // Variables
+    let persistenceController = PersistenceController.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
