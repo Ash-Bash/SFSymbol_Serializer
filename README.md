@@ -4,6 +4,8 @@
 SFSymbol Serializer is a Application writen in Swift & SwiftUI that allows Developers to create entries that you can copy / add SFSymbols to a List, 
 set certain properties (allow for filtering in apps) and Serializes them into a JSON File.
 
+Once macOS 13 is available SFSymbol Serializer will be Published to the Mac App Store for Free, but for now will publish new versions here.
+
 Here are the Codable Files for Serialization:
 
 
