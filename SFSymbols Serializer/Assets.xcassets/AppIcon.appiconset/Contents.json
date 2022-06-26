@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "SFSymbol_SerializerIcon1024 1.png",
+      "filename" : "SFSymbol_SerializerIcon1024.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -49,7 +49,7 @@
       "size" : "256x256"
     },
     {
-      "filename" : "SFSerializermacOS1024-512 1.png",
+      "filename" : "SFSerializermacOS1024-512 2.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"

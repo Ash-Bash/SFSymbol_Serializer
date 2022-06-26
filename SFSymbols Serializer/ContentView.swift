@@ -22,12 +22,21 @@ struct ContentView: View {
     @State private var presentAddSymbol: Bool = false
     
     @State private var selection: SFProjects? = nil
+    @State private var searchText: String = ""
+    
+    var searchResults: [SFProjects] {
+        if searchText.isEmpty {
+            return self.items.map { $0 }
+        } else {
+            return self.items.filter { $0.name!.contains(self.searchText.lowercased()) }
+        }
+    }
     
     @ViewBuilder var body: some View {
         NavigationSplitView {
             List(selection: self.$selection) {
                 Section(header: Text("Projects")) {
-                    ForEach(items) { item in
+                    ForEach(self.searchResults) { item in
                         SidebarItem(item: item)
                     }
                     .onDelete(perform: deleteItems)
@@ -46,6 +55,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .searchable(text: self.$searchText, placement: .sidebar)
         } detail: {
             Text("No SFProject Selected")
                 .font(.title)
@@ -103,6 +113,7 @@ struct SidebarItem: View {
     
     @State private var isEditing: Bool = false
     @State private var renameText: String = ""
+    @State private var isHovering: Bool = false
     
     init(item: SFProjects) {
         self.item = item
@@ -128,9 +139,21 @@ struct SidebarItem: View {
             NavigationLink {
                 EditorView(project: item)
             } label: {
-                Label(item.name!, systemImage: "tablecells")
-                    .labelStyle(.titleAndIcon)
-                    .tint(.accentColor)
+                HStack {
+                    Label(item.name!, systemImage: "tablecells")
+                        .labelStyle(.titleAndIcon)
+                        .tint(.accentColor)
+                    Spacer()
+                    if self.isHovering {
+                        Button(action: { self.delete() }) {
+                            Image(systemName: "x.circle.fill")
+                        }
+                        .buttonStyle(.borderless)
+                    }
+                }
+            }
+            .onHover { hover in
+                self.isHovering = hover
             }
         } else {
             HStack {
