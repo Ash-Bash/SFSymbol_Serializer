@@ -23,12 +23,13 @@ struct ContentView: View {
     
     @State private var selection: SFProjects? = nil
     @State private var searchText: String = ""
+    @State private var justAdded: Bool = false
     
     var searchResults: [SFProjects] {
         if searchText.isEmpty {
             return self.items.map { $0 }
         } else {
-            return self.items.filter { $0.name!.contains(self.searchText.lowercased()) }
+            return self.items.filter { $0.name!.lowercased().contains(self.searchText.lowercased()) }
         }
     }
     
@@ -37,12 +38,16 @@ struct ContentView: View {
             List(selection: self.$selection) {
                 Section(header: Text("Projects")) {
                     ForEach(self.searchResults) { item in
-                        SidebarItem(item: item)
+                        if item.name == "Item \(items.count)" && self.justAdded {
+                            SidebarEditItem(item: item, onSave: { self.justAdded.toggle() })
+                        } else {
+                            SidebarItem(item: item)
+                        }
                     }
                     .onDelete(perform: deleteItems)
                 }
             }
-            .navigationSplitViewColumnWidth(240)
+            .navigationSplitViewColumnWidth(300)
             .toolbar {
                 #if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -62,7 +67,6 @@ struct ContentView: View {
                 .bold()
                 .foregroundColor(.secondary)
         }
-        .navigationSplitViewStyle(.balanced)
     }
     
     private func addItem() {
@@ -75,6 +79,7 @@ struct ContentView: View {
 
             do {
                 try viewContext.save()
+                self.justAdded = true
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -111,16 +116,17 @@ struct SidebarItem: View {
     private var items: FetchedResults<SFProjects>
     var item: SFProjects
     
-    @State private var isEditing: Bool = false
+    @State var isEditing: Bool = false
     @State private var renameText: String = ""
     @State private var isHovering: Bool = false
     
-    init(item: SFProjects) {
+    init(item: SFProjects, isEditing: Bool = false) {
         self.item = item
         self._renameText = State(initialValue: self.item.name!)
+        self._isEditing = State(initialValue: self.isEditing)
     }
     
-    @ViewBuilder var body: some View {
+    var body: some View {
         self.itemBody
             .contextMenu {
                 Button(action: { self.isEditing.toggle() }) {
@@ -156,30 +162,7 @@ struct SidebarItem: View {
                 self.isHovering = hover
             }
         } else {
-            HStack {
-                Image(systemName: "tablecells")
-                TextField("", text: self.$renameText)
-                    .textFieldStyle(.roundedBorder)
-                    .onSubmit {
-                        self.save()
-                    }
-                Button(action: { self.save() }) {
-                    Text("Done")
-                }
-                .buttonStyle(.borderedProminent)
-                .buttonBorderShape(.roundedRectangle)
-            }
-        }
-    }
-    
-    func save() {        
-        self.item.name = self.renameText
-        do {
-            try viewContext.save()
-            self.isEditing.toggle()
-            print("Project saved.")
-        } catch {
-            print(error.localizedDescription)
+            SidebarEditItem(item: self.item, onSave: { self.isEditing.toggle() })
         }
     }
     
@@ -198,6 +181,58 @@ struct SidebarItem: View {
         }
     }
     
+}
+
+struct SidebarEditItem: View {
+    
+    // Variables
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \SFProjects.date, ascending: true)],
+        animation: .default)
+    private var items: FetchedResults<SFProjects>
+    var item: SFProjects
+    var onSave: () -> () = {}
+    
+    @State private var renameText: String = ""
+    
+    init(item: SFProjects, onSave: @escaping () -> () = {}) {
+        self.item = item
+        self.onSave = onSave
+        self._renameText = State(initialValue: self.item.name!)
+    }
+    
+    var body: some View {
+        self.itemBody
+    }
+    
+    @ViewBuilder var itemBody: some View {
+        HStack {
+            Image(systemName: "tablecells")
+            TextField("", text: self.$renameText)
+                .textFieldStyle(.roundedBorder)
+                .onSubmit {
+                    self.save()
+                }
+            Button(action: { self.save() }) {
+                Text("Done")
+            }
+            .buttonStyle(.borderedProminent)
+            .buttonBorderShape(.roundedRectangle)
+        }
+    }
+    
+    func save() {
+        self.item.name = self.renameText
+        do {
+            try viewContext.save()
+            print("Project saved.")
+            self.onSave()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
